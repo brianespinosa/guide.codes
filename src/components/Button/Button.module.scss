@@ -1,0 +1,31 @@
+._ {
+  display: inline-flex;
+  height: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: var(--brand-color-accent);
+  color: var(--brand-color-text);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+._:hover {
+  background-color: #fff;
+}
+
+._:focus-visible,
+._[data-focus-visible] {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+._[aria-disabled='true'] {
+  opacity: 0.5;
+}
