@@ -8,6 +8,7 @@ import path from 'path';
 import { CH } from '@code-hike/mdx/dist/components.cjs';
 import theme from 'shiki/themes/solarized-dark.json';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
+import Layout from '../../components/Layout/Layout';
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -25,7 +26,7 @@ const components = {
 
 export default function PostPage({ mdxSource, frontMatter }) {
   return (
-    <>
+    <Layout>
       <header>
         <nav>
           <Link href='/'>
@@ -39,7 +40,7 @@ export default function PostPage({ mdxSource, frontMatter }) {
       <main>
         <MDXRemote {...mdxSource} components={components} />
       </main>
-    </>
+    </Layout>
   );
 }
 
