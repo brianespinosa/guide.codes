@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@code-hike/mdx": "0.3.0",
+    "fathom-client": "3.4.1",
     "framer-motion": "6.3.0",
     "gray-matter": "4.0.3",
     "next": "12.1.5",
