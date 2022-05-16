@@ -43,10 +43,6 @@
     "activityBar.inactiveForeground": "#cbb771",
     "activityBarBadge.background": "#bcbcdd",
     "activityBarBadge.foreground": "#2e2e47",
-    "list.hoverBackground": "#cbb771",
-    "list.activeSelectionBackground": "#2e2e47",
-    "list.activeSelectionForeground": "#bcbcdd",
-    "list.hoverForeground": "#fff",
     "sideBarSectionHeader.background": "#2e2e47",
     "sideBarSectionHeader.foreground": "#bcbcdd"
   }

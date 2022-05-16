@@ -7,7 +7,10 @@
     "build": "nx build",
     "lint": "nx lint",
     "start": "nx serve",
-    "test": "nx test"
+    "test": "nx test",
+    "nx-latest": "nx migrate latest",
+    "nx-migrate": "yarn install && nx migrate --run-migrations",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@code-hike/mdx": "0.5.0",
@@ -51,7 +54,9 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.5.0",
+    "husky": "8.0.1",
     "jest": "27.5.1",
+    "lint-staged": "12.4.1",
     "nx": "14.1.6",
     "prettier": "^2.5.1",
     "react-test-renderer": "18.1.0",
