@@ -1,10 +1,18 @@
+:root {
+  --ch-scrollycoding-sticker-width: 800px;
+  --ch-scrollycoding-code-min-height: 400px;
+}
+
+.ch-scrollycoding-with-preview .ch-scrollycoding-preview {
+  height: 40%;
+}
+
 html {
   padding: 0;
   margin: 0;
 }
 
 body {
-  max-width: 60em;
   margin: 0 auto;
   padding: 0 1em;
 }

@@ -22,7 +22,6 @@
       "options": {
         "buildTarget": "web-app:build",
         "dev": true
-        // "customServerPath": "../../tools/next-watch-server/next-watch-server.ts"
       },
       "configurations": {
         "development": {
