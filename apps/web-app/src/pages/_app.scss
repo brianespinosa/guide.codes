@@ -1,6 +1,24 @@
+@use 'sass:math';
+@use 'sass:map';
+@use 'include-media' as * with (
+  $breakpoints: (
+    phone: 320px,
+    tablet: 768px,
+    laptop: 1024px,
+    desktop: 1600px,
+  )
+);
+
 :root {
-  --ch-scrollycoding-sticker-width: 800px;
-  --ch-scrollycoding-code-min-height: 400px;
+  --ch-scrollycoding-sticker-width: 50%;
+
+  @include media('>laptop') {
+    --ch-scrollycoding-sticker-width: 40%;
+  }
+
+  @include media('>desktop') {
+    --ch-scrollycoding-sticker-width: 700px;
+  }
 }
 
 .ch-scrollycoding-with-preview .ch-scrollycoding-preview {
@@ -13,8 +31,13 @@ html {
 }
 
 body {
+  max-width: map.get($breakpoints, desktop);
+  padding: 1em 0.5em 1em 1em;
   margin: 0 auto;
-  padding: 0 1em;
+
+  @include media('>laptop') {
+    padding: 2em;
+  }
 }
 
 a {
