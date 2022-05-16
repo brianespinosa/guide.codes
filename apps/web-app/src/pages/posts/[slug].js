@@ -5,7 +5,7 @@ import { serialize } from 'next-mdx-remote/serialize';
 import { remarkCodeHike } from '@code-hike/mdx';
 import Link from 'next/link';
 import path from 'path';
-import { CH } from '@code-hike/mdx/dist/components.cjs';
+import { CH } from '@code-hike/mdx/components';
 import theme from 'shiki/themes/solarized-dark.json';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 import Layout from '../../components/Layout/Layout';
@@ -29,12 +29,12 @@ export default function PostPage({ mdxSource, frontMatter }) {
     <Layout>
       <header>
         <nav>
-          <Link href='/'>
+          <Link href="/">
             <a>👈 Go back home</a>
           </Link>
         </nav>
       </header>
-      <div className='post-header'>
+      <div className="post-header">
         <h1>{frontMatter.title}</h1>
       </div>
       <main>
@@ -52,7 +52,17 @@ export const getStaticProps = async ({ params }) => {
 
   const mdxSource = await serialize(content, {
     mdxOptions: {
-      remarkPlugins: [[remarkCodeHike, { autoImport: false, theme }]],
+      remarkPlugins: [
+        [
+          remarkCodeHike,
+          {
+            autoImport: false,
+            lineNumbers: true,
+            showCopyButton: false,
+            theme,
+          },
+        ],
+      ],
       rehypePlugins: [],
       useDynamicImport: true,
     },

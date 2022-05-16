@@ -5,10 +5,12 @@
     "clinyong.vscode-css-modules",
     "codeandstuff.package-json-upgrade",
     "dbaeumer.vscode-eslint",
-    "gruntfuggly.auto-snippet",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
     "mgmcdermott.vscode-language-babel",
+    "nrwl.angular-console",
     "silvenon.mdx",
-    "xyc.vscode-mdx-preview"
+    "xyc.vscode-mdx-preview",
   ],
   "unwantedRecommendations": []
 }
