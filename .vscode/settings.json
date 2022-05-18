@@ -36,14 +36,12 @@
   "jest.jestCommandLine": "yarn test",
   "jest.showCoverageOnLoad": true,
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#bcbcdd",
-    "activityBar.activeBorder": "#fff",
-    "activityBar.background": "#2e2e47",
-    "activityBar.foreground": "#fff",
-    "activityBar.inactiveForeground": "#cbb771",
-    "activityBarBadge.background": "#bcbcdd",
-    "activityBarBadge.foreground": "#2e2e47",
-    "sideBarSectionHeader.background": "#2e2e47",
-    "sideBarSectionHeader.foreground": "#bcbcdd"
+    "activityBar.activeBackground": "#600",
+    "activityBar.activeBorder": "#a99",
+    "activityBar.background": "#800",
+    "activityBar.foreground": "#a99",
+    "activityBar.inactiveForeground": "#500",
+    "activityBarBadge.background": "#a99",
+    "activityBarBadge.foreground": "#500"
   }
 }

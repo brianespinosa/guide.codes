@@ -1,13 +1,13 @@
 import { NextServer } from 'next/dist/server/next';
 import { NextServerOptions, ProxyConfig } from '@nrwl/next';
 
-import express from 'express';
-import path from 'path';
-import chokidar from 'chokidar';
+// import express from 'express';
+// import path from 'path';
+// import chokidar from 'chokidar';
 
-// const express = require('express');
-// const path = require('path');
-// const chokidar = require('chokidar');
+const express = require('express');
+const path = require('path');
+const chokidar = require('chokidar');
 
 export default async function nextWatchServer(
   app: NextServer,
@@ -17,7 +17,7 @@ export default async function nextWatchServer(
   const handle = app.getRequestHandler();
   await app.prepare();
 
-  const articlesPath = 'posts';
+  const articlesPath = '_posts';
 
   // watch folders if specified
   if (articlesPath) {

@@ -9,6 +9,27 @@
   )
 );
 
+/* Color Theme Swatches in Hex */
+$color-accent-hex: #9c0029;
+$color-neutral-hex: #b3a78f;
+$color-neutral-dark-hex: #736b5c;
+$color-light-hex: #f0f1f5;
+$color-dark-hex: #00123b;
+
+/* Color Theme Swatches in RGBA */
+$color-accent-rgba: rgb(156 0 41 / 100%);
+$color-neutral-rgba: rgb(179 167 143 / 100%);
+$color-neutral-dark-rgba: rgb(115 107 92 / 100%);
+$color-light-rgba: rgb(240 241 245 / 100%);
+$color-dark-rgba: rgb(0 18 59 / 100%);
+
+/* Color Theme Swatches in HSLA */
+$color-accent-hsla: hsl(344deg 100 30 / 100%);
+$color-neutral-hsla: hsl(40deg 19 63 / 100%);
+$color-neutral-dark-hsla: hsl(39deg 11 40 / 100%);
+$color-light-hsla: hsl(228deg 20 95 / 100%);
+$color-dark-hsla: hsl(221deg 100 11 / 100%);
+
 :root {
   --ch-scrollycoding-sticker-width: 50%;
 
@@ -19,6 +40,14 @@
   @include media('>desktop') {
     --ch-scrollycoding-sticker-width: 700px;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: 700;
 }
 
 .ch-scrollycoding-with-preview .ch-scrollycoding-preview {
@@ -34,6 +63,11 @@ body {
   max-width: map.get($breakpoints, desktop);
   padding: 1em 0.5em 1em 1em;
   margin: 0 auto;
+  background-color: $color-light-hex;
+  color: $color-dark-hex;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 
   @include media('>laptop') {
     padding: 2em;
