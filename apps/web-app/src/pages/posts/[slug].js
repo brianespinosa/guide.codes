@@ -3,10 +3,10 @@ import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import { remarkCodeHike } from '@code-hike/mdx';
-import Link from 'next/link';
+// import Link from 'next/link';
 import path from 'path';
 import { CH } from '@code-hike/mdx/components';
-import theme from 'shiki/themes/solarized-dark.json';
+import theme from 'shiki/themes/dracula.json';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 import Layout from '../../components/Layout/Layout';
 
@@ -27,7 +27,7 @@ const components = {
 export default function PostPage({ mdxSource, frontMatter }) {
   return (
     <Layout>
-      <header>
+      {/* <header>
         <nav>
           <Link href="/">
             <a>👈 Go back home</a>
@@ -36,7 +36,7 @@ export default function PostPage({ mdxSource, frontMatter }) {
       </header>
       <div className="post-header">
         <h1>{frontMatter.title}</h1>
-      </div>
+      </div> */}
       <main>
         <MDXRemote {...mdxSource} components={components} />
       </main>
